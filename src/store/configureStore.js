@@ -5,7 +5,19 @@ import createHistory from 'history/createBrowserHistory';
 // 'routerMiddleware': the new way of storing route changes with redux middleware since rrV4.
 import { routerMiddleware } from 'react-router-redux';
 import rootReducer from '../reducers';
+import storage from 'redux-persist/lib/storage'
+import { persistStore, persistReducer } from 'redux-persist';
+
+const persistConfig = {
+  key: 'root',
+  storage,
+ // blacklist: ['routing'],
+}
+
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+
 export const history = createHistory();
+
 function configureStoreProd(initialState) {
   const reactRouterMiddleware = routerMiddleware(history);
   const middlewares = [
@@ -17,8 +29,8 @@ function configureStoreProd(initialState) {
     reactRouterMiddleware,
   ];
 
-return createStore(rootReducer, initialState, compose(
-    applyMiddleware(...middlewares)
+return createStore(persistedReducer, initialState, compose(
+    applyMiddleware(...middlewares),
     )
   );
 }
@@ -27,7 +39,6 @@ function configureStoreDev(initialState) {
   const reactRouterMiddleware = routerMiddleware(history);
   const middlewares = [
     // Add other middleware on this line...
-
     // Redux middleware that spits an error on you when you try to mutate your state either inside a dispatch or between dispatches.
     reduxImmutableStateInvariant(),
 
@@ -38,8 +49,8 @@ function configureStoreDev(initialState) {
   ];
 
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // add support for Redux dev tools
-  const store = createStore(rootReducer, initialState, composeEnhancers(
-    applyMiddleware(...middlewares)
+  const store = createStore(persistedReducer, initialState, composeEnhancers(
+    applyMiddleware(...middlewares),
     )
   );
 
@@ -50,9 +61,10 @@ function configureStoreDev(initialState) {
       store.replaceReducer(nextReducer);
     });
   }
-
+  //syncHistoryWithStore(history, store);
   return store;
 }
+
 
 const configureStore = process.env.NODE_ENV === 'production' ? configureStoreProd : configureStoreDev;
 

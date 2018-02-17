@@ -1,0 +1,952 @@
+body {
+  background-color: #223394;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.app {
+  text-align: center;
+}
+
+.App-logo {
+  height: 50px;
+  float: left;
+}
+
+.App-header {
+  background-color: #fefefe;
+  height: 80px;
+  padding: 10px;
+  color: darkblue;
+  margin-bottom: 5px;
+  border-bottom: 3px solid darkblue;
+  text-align: left;
+}
+
+.name {
+  font: 35px;
+  margin-top: 5px;
+}
+
+.mainarea {
+  background-color: #15135c;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+.checklabel {
+  padding: 5px;
+  margin: 5px;
+}
+/*.mainarea {
+  width: 60%;
+  margin-left: 13%;
+  float: left;
+  background-color: #fefefe;
+  height: 90%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+*/
+.blub {
+  box-shadow: 5px -3px 10px 0 rgba(0,0,0,0.5);
+  height: 100%;
+}
+.calend {
+  margin-top: 20px;
+}
+
+.nextdate, .prevdate {
+  margin-top:15px;
+}
+.littext {
+  font-size: 10px;
+  margin: 2px -20px 2px -10px;
+}
+
+.caldate {
+  font-weight: 900;
+  margin-bottom: 3px;
+  margin-top: 5px;
+
+}
+
+.sidebar {
+  background: #1e2b60;
+  background: -moz-linear-gradient(-45deg, #122057 0%, #121754 100%);
+  background: -webkit-linear-gradient(-45deg, #1e2b60 0%,#1c4da9 100%);
+  background: linear-gradient(135deg, #1e2b60 0%,#1c72a9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e2b60', endColorstr='#1c72a9',GradientType=1 );
+  color: white;
+  float: right;
+  width: 22%;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+.sideitem li a {
+  color: #ddd;
+}
+
+.botsideitem {
+  bottom: 0;
+  color: white;
+  border-top: 1px solid white;
+  position: absolute;
+  padding: 20px 0 50px 0;
+  width: 100%;
+}
+
+
+.legolas {
+  border-radius: 50%;
+  background: gray;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0px 0px 20px #000;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 25px;
+  line-height: 0;
+  outline: none;
+}
+
+.btn, .btn:hover {
+  outline: none !important;
+}
+
+.botbar span {
+  color: #e55006;
+}
+.App-intro {
+  font-size: large;
+  background: #fefefe;
+}
+
+.newsimg {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.newsitem {
+  z-index: 1;
+  position: absolute;
+}
+
+.newsname {
+  font-weight: 500;
+}
+
+.bb {
+  border-bottom: 1px solid #555;
+}
+
+.bt {
+  border-top: 1px solid #555;
+  margin-left: 2.5%;
+  margin-top: 20px;
+  width: 95%;
+  padding-top: 15px;
+}
+
+.bl {
+  border-left: 1px solid #555;
+}
+
+.br {
+  border-right: 1px solid #555;
+}
+
+.h1-3 {
+  height: 33%;
+}
+
+.h2-3 {
+  height: 66%;
+}
+
+.h1-2 {
+  height: 50%;
+}
+
+.nm {
+  margin: 0;
+}
+.ping {
+  height: 100%;
+}
+.pong {
+  height: 30%;
+}
+
+.supbtn img {
+  height: 80px;
+  width:  80px;
+  background-color: #ddd;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.sideitem {
+  border-bottom: 1px solid #ffffff;
+}
+
+.sideitem a {
+  display: block;
+}
+
+.panel-body a {
+  background-color: transparent;
+  padding: 6px 15px;
+  display: block;
+  text-align: left;
+  color: white;
+}
+
+.panel-body a i {
+  width: 24px;
+  text-align: left;
+}
+
+.panel-body a:hover {
+  background-color: rgba(255,255,255,0.25);
+  color: #ffc465;
+  text-decoration: none;
+}
+
+.bimba {
+  overflow-y: auto;
+}
+
+.bimba button i {
+  width: 18px;
+  text-align: center;
+}
+
+.bimba button {
+  border: none;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  box-shadow: none;
+  font-size: 23px;
+  padding: 10px;
+  text-align: left;
+  
+  outline: none;
+}
+
+.bimba button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  color: #edce8e;
+  border: none;
+  box-shadow: none;
+}
+
+.bimba button:enabled {
+  background-color: transparent;
+  color: white;
+  border: none;
+  box-shadow: none;
+}
+.bimba .btn.btn-default:active {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  border: none;
+  box-shadow: none;
+}
+
+.bimba .panel-body {
+  padding: 0;
+  background-color: transparent;
+  color: white;
+}
+
+.bimba .panel {
+  background-color: transparent;
+  margin-bottom: 0;
+  border: none;
+ 
+}
+
+.contcard {
+  width: 49.4%;
+  margin: 0.3%;
+  height: 193px;
+  background-color: lightblue;
+  border-radius: 15px;
+  border-width: 10px;
+  border-color: transparent;
+  text-align: left;
+}
+.avatar {
+      height: 100%;
+    float: right;
+    background-color: grey;
+    margin-right: -15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.contcard h2 {
+     width: 70%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.contcard p {
+  width: 70%;
+    float: left;
+    font-weight: 700;
+    font-size: 18px;
+}
+.contcard ul {
+ width: 70%;
+    float: left;
+    margin-left: -18px;
+    color: brown;
+    font-size: 23px;
+}
+
+.ndhead {
+  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px ;
+}
+
+.ndhead p {
+
+    margin-top: 55px;
+    float: right;
+}
+
+.ndhead h1 {
+  margin-top: 40px;
+}
+
+
+.description {
+    float: left;
+    margin: 20px 0 0 20px;
+    width: calc(50% - 20px);
+}
+
+.description ul {
+    padding-left: 25px;
+}
+
+.description ul li {
+    font-size: 18px;
+    font-weight: 500;
+    list-style: disc;
+    margin-top: 5px;
+    color: #d5bb85;
+    text-align: left;
+    line-height: 20px;
+}
+
+.exemplarImage {
+    background-clip: border-box;
+    background-size: cover;
+    border-radius: 0 5px 5px 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+.portraitImage {
+    background-clip: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    border-radius: 0 5px 5px 0;
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+.photo {
+    max-width: 100%;
+    height: 300px;
+    border-right: 10px solid #000000;
+}
+
+.per {
+    background: #1e2b60;
+    background: -moz-linear-gradient(-45deg, #1e2b60 0%, #2195c8 100%);
+    background: -webkit-linear-gradient(-45deg, #1e2b60 0%,#2195c8 100%);
+    background: linear-gradient(135deg, #1e2b60 0%,#2195c8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e2b60', endColorstr='#2195c8',GradientType=1 );
+    border-radius: 6px;
+    height: 200px;
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.per .description .title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.per .description .title-sm {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+}
+
+
+.album {
+    background: #000000;
+    border-radius: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+
+.album .item {
+    height: 300px;
+    margin: 6px;
+    text-align: left;
+}
+
+.album .item.gold {
+  background-color: #8b5300;
+}
+
+#newcontent {
+  position: relative;
+}
+
+
+
+#newspaper {
+  /*background: #FFFFFF;*/
+  background-color: rgba(255, 0, 0, 0.0);
+  
+}
+/*
+#newspaper > div {
+  position: absolute;
+  width: 800px;
+  height: 450px;
+}*/
+
+#newspaper .elementArea {
+  position: absolute;
+  text-align: left;
+  transform-origin: 50% 50%;
+}
+
+#newspaper .elementArea .newsTitle {
+  font-weight: bolder;
+  line-height: 1.2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textFlow span {
+  line-height: 1.2;
+}
+
+.textFlow li {
+  font-size: 28px;
+}
+
+.textFlow li p {
+  margin-bottom: 10px;
+}
+.textFlow p {
+  margin-bottom: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+
+.error-message {
+  color: red;
+}
+
+.field {
+  margin: auto;
+  width: 250px;
+  height: 50px;
+}
+
+.link:active {
+  opacity: .50;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
+}
+
+/*These rules need to be in here for the EmployeePage to calculate the caption size*/
+
+.textDimensionCalculation {
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    white-space: nowrap;
+}
+
+.caption {
+  display: inline-block;
+  white-space: pre;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: left;
+}
+
+.tipText {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.valueText {
+  font-size: 20px;
+  vertical-align: center;
+}
+
+.targetItemBGRectHover {
+  fill: orange;
+}
+
+.target-data-tip {
+  fill: rgb(228, 182, 108);
+  stroke: rgb(0, 0, 0);
+  stroke-width: "1";
+}
+.target-data-tip-hovered {
+    stroke: rgb(240, 82, 9);
+    fill: rgb(223, 127, 2);
+    stroke-width: "2";
+  }
+
+/*created for issuePageItemRenderer.js, jquery functions are in display.js */
+
+
+
+.scaleable-wrapper {
+  resize: both;
+  position: relative;
+  height: 1000px;
+}
+
+.ui-resizable-se {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bigred {
+  color: red;
+  font-size: 5rem;
+}  
+
+
+.photoElement {
+max-width: 100%;
+  height: auto;
+}
+
+
+
+/* BEGIN NEW CSS */
+
+body {
+  background-color: #fff;
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+img {
+  vertical-align: text-bottom;
+}
+pre {
+  white-space: pre-wrap;
+}
+span.control {
+  cursor: pointer;
+}
+span.control:hover {
+  text-decoration: underline;
+}
+
+/* From https://github.com/tobiasahlin/SpinKit */
+.Spinner {
+}
+.Spinner > div {
+  background-color: #666;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.Spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.Spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.App__wrap {
+  width: 90%;
+  max-width: 1280px;
+  margin: 8px auto;
+  color: #000;
+  background-color: #f5f5f5;
+  font-size: 13.3333px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.App__header {
+  color: #00d8ff;
+  background-color: #222;
+  padding: 6px;
+  line-height: 18px;
+  vertical-align: middle;
+  position: relative;
+}
+.App__settings {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+}
+.Settings {
+  box-sizing: border-box;
+  padding: .75em;
+  position: absolute;
+  width: 36%;
+  background-color: inherit;
+  right: 0;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.Settings__setting td:first-child {
+  text-align: right;
+}
+.Settings p {
+  color: #fff;
+}
+.Settings div:last-child > p:last-child {
+  margin-bottom: 0;
+}
+.App__header img {
+  border: 1px solid #00d8ff;
+  margin-right: .25em;
+}
+.App__header a {
+  color: inherit;
+  text-decoration: none;
+}
+.App__header a.active {
+  color: #fff;
+}
+.App__homelink {
+  text-decoration: none;
+  font-weight: bold;
+  color: #00d8ff !important;
+  margin-right: .75em;
+}
+.App__homelink.active {
+  color: #fff !important;
+}
+.App__content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.App__footer {
+  margin-top: 1em;
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+  color: #333;
+  padding: 6px 0;
+}
+.App__footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.Items__list {
+  padding-left: 3em;
+  padding-right: 1.25em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+.ListItem {
+  margin-bottom: 16px;
+}
+.ListItem--loading {
+  min-height: 34px;
+}
+
+.Updates--loading {
+  padding: 1em 1.25em 0 1.25em;
+  margin-bottom: 1em;
+}
+.Updates__notice {
+  padding: 0 1.25em;
+}
+.Updates .Comment {
+  margin-bottom: .75em;
+}
+
+.Paginator {
+  margin-left: 3em;
+  padding: .5em 0;
+}
+.Paginator a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+.Paginator a:hover {
+  text-decoration: underline;
+}
+
+.Item__content,
+.Item--loading {
+  padding: 1em 1.25em 0 1.25em;
+  margin-bottom: 1em;
+}
+.Item__title {
+  color: #666;
+  font-size:18px;
+}
+.Item__title a {
+  text-decoration: none;
+  color: #000;
+}
+.Item__title a:hover {
+  text-decoration: underline;
+}
+.Item__title a:visited {
+  color: #666;
+}
+.Item__meta {
+  color: #666;
+}
+.Item > .Item__meta {
+  margin-bottom: 1em;
+}
+.Item__meta a {
+  text-decoration: none;
+  color: inherit;
+}
+.Item__meta a:hover {
+  text-decoration: underline;
+}
+.Item__meta em {
+  font-style: normal;
+  background-color: #ffffde;
+  color: #000;
+}
+.Item__by a, .ListItem__newcomments a {
+  font-weight: bold;
+}
+.Item__text {
+  margin-top: 1em;
+}
+.Item__poll {
+  margin-top: 1em;
+  padding-left: 2.5em;
+}
+
+.PollOption {
+  margin-bottom: 10px;
+}
+.PollOption__score {
+  color: #666;
+}
+
+.PermalinkedComment > .Comment__content {
+  margin-bottom: 1em;
+}
+.Comment {
+}
+.Comment--new > .Comment__content {
+  background-color: #ffffde;
+}
+/* Highlights a comment and its descendants on hover -- too distracting?
+.Comment:hover > .Comment__content {
+  background-color: #fff;
+}
+*/
+.Comment__meta {
+  color: #666;
+  margin-bottom: .5em
+}
+.Comment__meta a {
+  text-decoration: none;
+  color: inherit;
+}
+.Comment__meta a:hover {
+  text-decoration: underline;
+}
+.Comment__meta em {
+  font-style: normal;
+  background-color: #ffffde;
+  color: #000;
+}
+.Comment__user {
+  font-weight: bold;
+}
+.Comment__content, .Comment--loading {
+  padding-right: 1.25em;
+  padding-top: .65em;
+  padding-bottom: .65em;
+}
+.Comment--level0 .Comment__content, .Comment--level0.Comment--loading { padding-left: 1.25em; }
+.Comment--level1 .Comment__content, .Comment--level1.Comment--loading { padding-left: 3.75em; }
+.Comment--level2 .Comment__content, .Comment--level2.Comment--loading { padding-left: 6.25em; }
+.Comment--level3 .Comment__content, .Comment--level3.Comment--loading { padding-left: 8.75em; }
+.Comment--level4 .Comment__content, .Comment--level4.Comment--loading { padding-left: 11.25em; }
+.Comment--level5 .Comment__content, .Comment--level5.Comment--loading { padding-left: 13.75em; }
+.Comment--level6 .Comment__content, .Comment--level6.Comment--loading { padding-left: 16.25em; }
+.Comment--level7 .Comment__content, .Comment--level7.Comment--loading { padding-left: 18.75em; }
+.Comment--level8 .Comment__content, .Comment--level8.Comment--loading { padding-left: 21.25em; }
+.Comment--level9 .Comment__content, .Comment--level9.Comment--loading { padding-left: 23.75em; }
+.Comment--level10 .Comment__content, .Comment--level10.Comment--loading { padding-left: 26.25em; }
+.Comment--level11 .Comment__content, .Comment--level11.Comment--loading { padding-left: 28.75em; }
+.Comment--level12 .Comment__content, .Comment--level12.Comment--loading { padding-left: 31.25em; }
+.Comment--level13 .Comment__content, .Comment--level13.Comment--loading { padding-left: 33.75em; }
+.Comment--level14 .Comment__content, .Comment--level14.Comment--loading { padding-left: 36.25em; }
+.Comment--level15 .Comment__content, .Comment--level15.Comment--loading { padding-left: 38.75em; }
+.Comment__kids {
+}
+.Comment__collapse {
+  cursor: pointer;
+}
+.Comment--collapsed .Comment__text,
+.Comment--collapsed > .Comment__kids {
+  display: none;
+}
+.Comment__text a {
+  color: #000;
+}
+.Comment__text a:visited {
+  color: #666;
+}
+.Comment__text p:last-child, .Comment__text pre:last-child {
+  margin-bottom: 0;
+}
+.Comment--dead > .Comment__content > .Comment__text {
+  color: #ddd !important;
+}
+.Comment--error .Comment__meta {
+  color: #f33;
+}
+
+.UserProfile {
+  padding-left: 1.25em;
+  padding-top: 1em;
+}
+.UserProfile h4 {
+  margin: 0 0 1em 0;
+}
+
+@media only screen and (max-width: 750px) and (min-width: 300px) {
+  .App__wrap {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  /* Hide the App title homelink on narrow viewports */
+  .App__homelink {
+    display: none;
+  }
+
+  /* Safari only fix to ensure Settings menu is full width */
+  _::-webkit-:not(:root:root), .Settings {
+    width: 100%;
+  }
+}
+

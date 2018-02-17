@@ -1,0 +1,1 @@
+export const newsFeedItems = ['newsitem1', 'newsitem2']
